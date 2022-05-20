@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  width: 40%;
+  padding: 1%;
+}
+
+.board header.title {
+  padding: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.board .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .square {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  cursor: pointer;
+  color: #fff;
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #9920b8;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.information .winner, .game-time {
+  padding: 10px;
+}
+
+button {
+  color: #fff;
+  background-color: #9920b8;
+  padding: 15px;
+  width: 100px;
+  cursor: pointer;
+}
