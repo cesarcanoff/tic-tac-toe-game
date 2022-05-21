@@ -102,6 +102,4 @@ function changePlayer() {
   // ADD ELEMENT OF HTML
 }
 
-resetGame.addEventListener("click", () => {
-  document.location.reload(true);
-});
+resetGame.addEventListener("click", () => document.location.reload(true));
