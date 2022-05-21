@@ -41,8 +41,8 @@ body {
   padding: 5px;
   margin-bottom: 30px;
   font-variant: small-caps;
-  font-size: 1.8rem;
-  background-color: aqua;
+  width: 100%;
+  font-size: 1.5rem;
   color: #9920b8;
   text-align: center;
 }
@@ -120,4 +120,35 @@ button:hover {
   background-color: #9920b8;
   color: #000;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .board {
+    width: 90%;
+  }
+
+  .board header.title {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 348px) {
+  .board {
+    width: 95%;
+  }
+
+  .board header.title {
+    font-size: 1rem;
+  }
+
+  .row .square {
+    width: 100px;
+    height: 100px;
+  }
+
+  button {
+    width: 200px;
+    padding: 10px;
+    font-size: 1rem;
+  }
 }
