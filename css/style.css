@@ -10,11 +10,24 @@ html,
 body {
   height: 100%;
 }
-
-body {
+ 
+.container {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.init {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  background-color: aqua;
+  transition: 300ms;
 }
 
 .board {
@@ -39,7 +52,7 @@ body {
   height: 150px;
   display: flex;
   cursor: pointer;
-  color: #fff;
+  color: #000;
   font-size: 5rem;
   justify-content: center;
   align-items: center;

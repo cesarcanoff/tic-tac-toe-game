@@ -8,34 +8,40 @@
     <title>Tic Tac Toe Game</title>
   </head>
   <body>
-    <div class="board">
-      <header class="title">
-        <h1>Tic Tac Toe Game</h1>
-      </header>
-      <div class="row">
-        <div id="1" class="square">-</div>
-        <div id="2" class="square">-</div>
-        <div id="3" class="square">-</div>
-      </div>
-      <div class="row">
-        <div id="4" class="square">-</div>
-        <div id="5" class="square">-</div>
-        <div id="6" class="square">-</div>
-      </div>
-      <div class="row">
-        <div id="7" class="square">-</div>
-        <div id="8" class="square">-</div>
-        <div id="9" class="square">-</div>
-      </div>
-      <div class="information">
-        <div class="winner">
-          <h3>Winner:</h3>
+    <!-- <div class="init">
+      <h1>COMEÇAR</h1>
+      <button id="gameStart">JOGAR</button>
+    </div> -->
+    <div class="container">
+      <div class="board">
+        <header class="title">
+          <h1>Tic Tac Toe Game</h1>
+        </header>
+        <div class="row">
+          <div onclick="selectSquare(this.id)" class="square" id="1">-</div>
+          <div onclick="selectSquare(this.id)" class="square" id="2">-</div>
+          <div onclick="selectSquare(this.id)" class="square" id="3">-</div>
         </div>
-        <div class="game-time">
-          <h3>Time:</h3>
+        <div class="row">
+          <div onclick="selectSquare(this.id)" class="square" id="4">-</div>
+          <div onclick="selectSquare(this.id)" class="square" id="5">-</div>
+          <div onclick="selectSquare(this.id)" class="square" id="6">-</div>
         </div>
-        <div class="reset-game">
-          <button>New Game</button>
+        <div class="row">
+          <div onclick="selectSquare(this.id)" class="square" id="7">-</div>
+          <div onclick="selectSquare(this.id)" class="square" id="8">-</div>
+          <div onclick="selectSquare(this.id)" class="square" id="9">-</div>
+        </div>
+        <div class="information">
+          <div class="winner">
+            <h3>Winner:</h3>
+          </div>
+          <div class="game-time">
+            <h3>Time:</h3>
+          </div>
+          <div class="reset-game">
+            <button>New Game</button>
+          </div>
         </div>
       </div>
     </div>
