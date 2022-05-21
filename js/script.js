@@ -1,8 +1,14 @@
 var squareList = document.querySelectorAll(".row .square"),
-  winnerField = document.querySelector(".information .winner h3"),
-  resetGame = document.querySelector(".information .reset-game button"),
-  hasWinner = false,
-  playerSignal = "X";
+  resetGame = document.querySelector(".board .reset-game button"),
+  startButton = document.querySelector(".information button"),
+  menuScreen = document.querySelector(".information");
+(hasWinner = false), (playerSignal = "X");
+
+startButton.addEventListener("click", () => {
+  setInterval(() => {
+    menuScreen.style.display = "none";
+  }, 300)
+});
 
 function selectSquare(elementId) {
   let squareElement = document.getElementById(elementId);
@@ -14,7 +20,7 @@ function selectSquare(elementId) {
       squareElement.style.color = "#d429ff";
       squareElement.textContent = playerSignal;
     }
-    
+
     changePlayer();
     checkSequence();
   } else {
@@ -83,7 +89,7 @@ function checkSequence() {
 }
 
 function changeSquareColor(elementsArray) {
-  elementsArray.forEach(element => {
+  elementsArray.forEach((element) => {
     element.style.backgroundColor = "#120116";
   });
 }
