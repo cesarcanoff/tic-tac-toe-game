@@ -1,5 +1,6 @@
 var squareList = document.querySelectorAll(".row .square");
 var winnerField = document.querySelector(".information .winner h3");
+var resetGame = document.querySelector(".information .reset-game button");
 var hasWinner = false;
 var playerSignal = "X";
 
@@ -100,3 +101,7 @@ function changePlayer() {
   }
   // ADD ELEMENT OF HTML
 }
+
+resetGame.addEventListener("click", () => {
+  document.location.reload(true);
+});
