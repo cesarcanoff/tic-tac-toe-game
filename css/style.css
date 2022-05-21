@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -62,6 +66,7 @@ body {
   height: 150px;
   display: flex;
   cursor: pointer;
+  font-weight: 800;
   color: #000;
   font-size: 5rem;
   justify-content: center;
@@ -105,6 +110,7 @@ body {
   position: absolute;
   text-align: center;
   top: 0;
+  padding: 2%;
   background-color: #000;
 }
 
@@ -112,21 +118,21 @@ body {
   font-size: 4rem;
   padding: 1%;
   color: #9920b8;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .information p {
   font-size: 1.5rem;
   padding: 1%;
   color: #9920b8;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .information ol {
   font-size: 1.5rem;
   padding: 1%;
   color: #9920b8;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 button {
@@ -140,13 +146,28 @@ button {
   border-radius: 50px;
   cursor: pointer;
   transition: 300ms;
-  margin: 0 auto;
+  margin-top: 30px;
 }
 
 button:hover {
   background-color: #9920b8;
   color: #000;
   transform: scale(1.1);
+}
+
+.board .winner {
+  color: #9920b8;
+  margin-top: 30px;
+  padding: 2%;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.board .game-time {
+  color: #9920b8;
+  padding: 2%;
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 @media screen and (max-width: 768px) {
@@ -156,6 +177,36 @@ button:hover {
 
   .board header.title {
     font-size: 1.3rem;
+  }
+
+  .information {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+  }
+
+  .information h1 {
+    font-size: 1.8rem;
+    margin-bottom: 50px;
+  }
+
+  .information p {
+    font-size: 1rem;
+    margin-bottom: 50px;
+  }
+
+  .information ol {
+    font-size: 1rem;
+    padding: 1%;
+    color: #9920b8;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 200px;
+    font-size: 1rem;
   }
 }
 
@@ -171,6 +222,11 @@ button:hover {
   .row .square {
     width: 100px;
     height: 100px;
+  }
+
+  .information {
+    width: 100%;
+    padding: 30px;
   }
 
   button {

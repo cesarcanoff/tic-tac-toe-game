@@ -1,13 +1,15 @@
 var squareList = document.querySelectorAll(".row .square"),
   resetGame = document.querySelector(".board .reset-game button"),
   startButton = document.querySelector(".information button"),
+  winnerField = document.querySelector(".board .winner"),
+  turnField = document.querySelector(".board .game-time"),
   menuScreen = document.querySelector(".information");
-(hasWinner = false), (playerSignal = "X");
+(hasWinner = false), (playerSignal = "X"), (turnField.textContent = "Turn: X");
 
 startButton.addEventListener("click", () => {
   setInterval(() => {
     menuScreen.style.display = "none";
-  }, 300)
+  }, 300);
 });
 
 function selectSquare(elementId) {
@@ -97,6 +99,7 @@ function changeSquareColor(elementsArray) {
 function setWinner(winnerSignal) {
   winnerField.textContent = `O ganhador foi o jogador com o ${winnerSignal}.`;
   hasWinner = true;
+  turnField.style.display = "none";
 }
 
 function changePlayer() {
@@ -106,7 +109,7 @@ function changePlayer() {
   } else {
     playerSignal = "X";
   }
-  // ADD ELEMENT OF HTML
+  turnField.textContent = `Turn: ${playerSignal}`;
 }
 
 resetGame.addEventListener("click", () => document.location.reload(true));
